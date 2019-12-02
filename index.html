@@ -33,8 +33,209 @@
 
       <main class="container">
         
+        <!--
+            Anatomy of a basic card:
+            - container - 'card'
+            - image     - 'card-img'
+            - body      - 'card-body'
+            - text      - 'card-text'
+            - link      - 'card-link'
 
-        
+            Cards will take up the full width of their parent container
+        -->
+
+        <main class="container">
+            <!-- Basic Card - no image -->
+            <div class="card my-4">
+                <div class="card-body">
+                    <p class="card-title">This is a card title</p>
+                    <p class="card-text">Cards take up 100% of their parent container by default</p>
+                    <a href="#" class="btn btn-success">Buuuuuuutton!</a>
+                </div>
+            </div>
+    
+            <!-- Basic Card - with image -->
+            <div class="card my-4">
+                <img class="card-img" src="https://lorempixel.com/400/200/" alt="placeholder image" />
+                <div class="card-body">
+                    <p class="card-title">This is a card title</p>
+                    <p class="card-text">Cards take up 100% of their parent container by default</p>
+                    <a href="#" class="btn btn-success">Buuuuuuutton!</a>
+                </div>
+            </div>
+    
+            <!--Basic Cards combined with grids-->
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img" src="https://lorempixel.com/400/200/" alt="placeholder image" />
+                        <div class="card-body">
+                            <p class="card-title">This is a card title</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nesciunt!</p>
+                            <a href="#" class="card-link">card link</a>
+                            <a href="#" class="card-link">card link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mx-2">
+                    <div class="card">
+                        <img class="card-img" src="https://lorempixel.com/400/200/" alt="placeholder image" />
+                        <div class="card-body">
+                            <p class="card-title">This is a card title</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nesciunt!</p>
+                            <a href="#" class="card-link">card link</a>
+                            <a href="#" class="card-link">card link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img" src="https://lorempixel.com/400/200/" alt="placeholder image" />
+                        <div class="card-body">
+                            <p class="card-title">This is a card title</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nesciunt!</p>
+                            <a href="#" class="card-link">card link</a>
+                            <a href="#" class="card-link">card link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="my-5">
+    
+            <div class="row">
+                <!-- Placing the card image on the bottom-->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-text">You can place the image on the bottom of the card by declaring `card-body` above the `card-img` element</div>
+                        </div>
+                        <img class="card-img" src="https://lorempixel.com/400/200/" alt="placeholder image" />
+                    </div>
+                </div>
+                <div class="col mx-2">
+                    <!-- cards with image overlays -->
+                    <div class="card">
+                        <img class="card-img" src="https://lorempixel.com/400/200/" alt="placeholder image" />
+                        <div class="card-img-overlay text-light">
+                            <h5 class="card-title">This is an overlaid title</h5>
+                            <p class="card-text">This is some overlaid text</p>
+                            <a href="#" class="btn btn-outline-light">button</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Cards with nested list groups-->
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">List groups can also be nested inside of cards</p>
+                            <ul class="list-group">
+                                <li class="list-group-item">List item 1</li>
+                                <li class="list-group-item">List item 2</li>
+                                <li class="list-group-item">List item 3</li>
+                                <li class="list-group-item">List item 4</li>
+                                <li class="list-group-item">List item 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="my-5">
+    
+            <div class="row">
+                <div class="col">
+                    <!--Card header-->
+                    <div class="card">
+                        <div class="card-header">Cards can have headers</div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis similique rerum enim obcaecati consequuntur veniam, voluptatem vero deleniti iusto. Molestias!</p>
+                            <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mx-2">
+                    <!--Card footer-->
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis similique rerum enim obcaecati consequuntur veniam, voluptatem vero deleniti iusto. Molestias!</p>
+                            <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                        <div class="card-footer">and footers</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!--Card header and footer-->
+                    <div class="card">
+                        <div class="card-header">Or both</div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam suscipit quibusdam recusandae asperiores</p>
+                            <a href="#" class="btn btn-primary">button</a>
+                        </div>
+                        <div class="card-footer">Or both</div>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="my-5">
+    
+            <div class="row">
+                <div class="col mr-2">
+                    <!-- horizontal card layout with nested grid-->
+                    <div class="card">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img class="card-img" src="https://lorempixel.com/400/200/" alt="placeholder image" />
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title">This is a horizontal card title</h5>
+                                <p class="card-text">Cards can be given a horizontal layout by including a neted grid within the card itself</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="my-5">
+    
+            <dic class="row">
+                <!--Card decks allow for uniform height and widths-->
+                <div class="card-deck mb-5">
+                    <div class="card">
+                        <div class="card-header">Card header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">This is a title</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia minus recusandae maiores nostrum velit eveniet incidunt iste, tenetur nemo repellendus laborum adipisci ipsum consequuntur! Exercitationem, quod possimus itaque repudiandae perspiciatis fugit non temporibus nulla nisi aperiam harum unde commodi officiis illum dignissimos praesentium molestias asperiores, expedita, repellat quae illo magnam!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Card header</div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Lorem, ipsum.</li>
+                                <li class="list-group-item">Minus, quasi.</li>
+                                <li class="list-group-item">Hic, blanditiis?</li>
+                                <li class="list-group-item">Distinctio, voluptas!</li>
+                                <li class="list-group-item">Sequi, corporis.</li>
+                                <li class="list-group-item">Tempora, fuga!</li>
+                                <li class="list-group-item">Lorem, ipsum.</li>
+                                <li class="list-group-item">Qui, ab.</li>
+                                <li class="list-group-item">Eius, dolores.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Card header</div>
+                        <img class="card-img" src="https://lorempixel.com/400/200/" alt="placeholder image" />
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                            <a href="#" class="btn btn-success">Clicky</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
       </main>
    
     <!-- Optional JavaScript -->
